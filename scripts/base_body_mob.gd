@@ -25,17 +25,17 @@ var direction: Vector3 = Vector3()
 var selected: bool = false
 
 # Other
-onready var navigation = $"../../../Navigation"
+onready var navigation = $"../../GridMap/Navigation"
+onready var end_pos = $"../../GridMap/Navigation/end_pos"
 
 # Path finding vars
 var path = []
 var path_ind = 0
-const move_speed = 6
-#func _ready():
+const move_speed = 3
 
-func _process(_delta):
-	var from = transform.basis.get_rotation_quat()
-	# find halfway point between a and b
+func _ready():
+	move_to(end_pos.global_transform.origin);
+	print(navigation);
 
 func _physics_process(_delta):
 	if path_ind < path.size():
@@ -43,14 +43,14 @@ func _physics_process(_delta):
 		if move_vec.length() < 0.1:
 			path_ind += 1
 			# Prevent from breaking - check if index is in scope of array
-			if (not path_ind >= path.size()):
-				$body.turn_to(path[path_ind])
+#			if (not path_ind >= path.size()):
+#				look_at(path[path_ind], Vector3.UP)
 		else:
 			kinematic_body.move_and_slide(move_vec.normalized() * move_speed, Vector3(0, 1, 0))
 
 func move_to(target_pos):
-	if (kinematic_body.global_transform.origin.distance_to(target_pos) > 1.5):
-		path = []
-		path = navigation.get_simple_path(kinematic_body.global_transform.origin, target_pos)
-		path_ind = 0
+	path = []
+	path = navigation.get_simple_path(kinematic_body.global_transform.origin, target_pos)
+	path.set(0, kinematic_body.global_transform.origin)
+	path_ind = 0
 
