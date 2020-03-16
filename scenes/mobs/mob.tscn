@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/mob.gd" type="Script" id=1]
+
+[sub_resource type="CapsuleMesh" id=1]
+radius = 0.5
+
+[sub_resource type="CapsuleShape" id=2]
+radius = 0.5
+
+[node name="KinematicBody" type="KinematicBody"]
+
+[node name="body" type="Spatial" parent="."]
+script = ExtResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="body"]
+transform = Transform( 1, -0.000175738, -0.000282263, -0.000282287, -0.000154349, -1, 0.000175699, 1, -0.000154393, 0, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
+shape = SubResource( 2 )
