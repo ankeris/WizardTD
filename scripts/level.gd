@@ -9,8 +9,8 @@ const mobs_count = 3
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	yield(spawn_mobs(mobs_count, 1), "completed")
-	yield(spawn_mobs(mobs_count, 1), "completed")
+#	yield(spawn_mobs(mobs_count, 1), "completed")
+#	yield(spawn_mobs(mobs_count, 1), "completed")
 	pass # Replace with function body.
 
 func spawn_mobs(how_many, how_frequently):

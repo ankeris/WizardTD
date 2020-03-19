@@ -1,10 +1,11 @@
 [gd_scene load_steps=13 format=2]
 
-[sub_resource type="CubeMesh" id=1]
-size = Vector3( 1, 0.3, 1 )
+[sub_resource type="SpatialMaterial" id=13]
+albedo_color = Color( 0.164706, 0.203922, 0.164706, 1 )
 
-[sub_resource type="SpatialMaterial" id=2]
-albedo_color = Color( 0.564706, 0.517647, 0.4, 1 )
+[sub_resource type="CubeMesh" id=1]
+material = SubResource( 13 )
+size = Vector3( 1, 0.3, 1 )
 
 [sub_resource type="ConcavePolygonShape" id=3]
 data = PoolVector3Array( -0.5, 0.1, 0.5, 0.5, 0.1, 0.5, -0.5, -0.1, 0.5, 0.5, 0.1, 0.5, 0.5, -0.1, 0.5, -0.5, -0.1, 0.5, 0.5, 0.1, -0.5, -0.5, 0.1, -0.5, 0.5, -0.1, -0.5, -0.5, 0.1, -0.5, -0.5, -0.1, -0.5, 0.5, -0.1, -0.5, 0.5, 0.1, 0.5, 0.5, 0.1, -0.5, 0.5, -0.1, 0.5, 0.5, 0.1, -0.5, 0.5, -0.1, -0.5, 0.5, -0.1, 0.5, -0.5, 0.1, -0.5, -0.5, 0.1, 0.5, -0.5, -0.1, -0.5, -0.5, 0.1, 0.5, -0.5, -0.1, 0.5, -0.5, -0.1, -0.5, 0.5, 0.1, 0.5, -0.5, 0.1, 0.5, 0.5, 0.1, -0.5, -0.5, 0.1, 0.5, -0.5, 0.1, -0.5, 0.5, 0.1, -0.5, -0.5, -0.1, 0.5, 0.5, -0.1, 0.5, -0.5, -0.1, -0.5, 0.5, -0.1, 0.5, 0.5, -0.1, -0.5, -0.5, -0.1, -0.5 )
@@ -17,68 +18,82 @@ size = Vector3( 1, 0.4, 1 )
 [sub_resource type="ConcavePolygonShape" id=6]
 data = PoolVector3Array( -0.5, 0.2, 0.5, 0.5, 0.2, 0.5, -0.5, -0.2, 0.5, 0.5, 0.2, 0.5, 0.5, -0.2, 0.5, -0.5, -0.2, 0.5, 0.5, 0.2, -0.5, -0.5, 0.2, -0.5, 0.5, -0.2, -0.5, -0.5, 0.2, -0.5, -0.5, -0.2, -0.5, 0.5, -0.2, -0.5, 0.5, 0.2, 0.5, 0.5, 0.2, -0.5, 0.5, -0.2, 0.5, 0.5, 0.2, -0.5, 0.5, -0.2, -0.5, 0.5, -0.2, 0.5, -0.5, 0.2, -0.5, -0.5, 0.2, 0.5, -0.5, -0.2, -0.5, -0.5, 0.2, 0.5, -0.5, -0.2, 0.5, -0.5, -0.2, -0.5, 0.5, 0.2, 0.5, -0.5, 0.2, 0.5, 0.5, 0.2, -0.5, -0.5, 0.2, 0.5, -0.5, 0.2, -0.5, 0.5, 0.2, -0.5, -0.5, -0.2, 0.5, 0.5, -0.2, 0.5, -0.5, -0.2, -0.5, 0.5, -0.2, 0.5, 0.5, -0.2, -0.5, -0.5, -0.2, -0.5 )
 
-[sub_resource type="CubeMesh" id=7]
-size = Vector3( 1, 0.3, 1 )
+[sub_resource type="SpatialMaterial" id=14]
+albedo_color = Color( 0.00784314, 1, 0, 1 )
 
-[sub_resource type="SpatialMaterial" id=8]
-albedo_color = Color( 0.054902, 1, 0, 1 )
+[sub_resource type="CubeMesh" id=7]
+material = SubResource( 14 )
+size = Vector3( 1, 0.3, 1 )
 
 [sub_resource type="ConcavePolygonShape" id=9]
 data = PoolVector3Array( -0.5, 0.15, 0.5, 0.5, 0.15, 0.5, -0.5, -0.15, 0.5, 0.5, 0.15, 0.5, 0.5, -0.15, 0.5, -0.5, -0.15, 0.5, 0.5, 0.15, -0.5, -0.5, 0.15, -0.5, 0.5, -0.15, -0.5, -0.5, 0.15, -0.5, -0.5, -0.15, -0.5, 0.5, -0.15, -0.5, 0.5, 0.15, 0.5, 0.5, 0.15, -0.5, 0.5, -0.15, 0.5, 0.5, 0.15, -0.5, 0.5, -0.15, -0.5, 0.5, -0.15, 0.5, -0.5, 0.15, -0.5, -0.5, 0.15, 0.5, -0.5, -0.15, -0.5, -0.5, 0.15, 0.5, -0.5, -0.15, 0.5, -0.5, -0.15, -0.5, 0.5, 0.15, 0.5, -0.5, 0.15, 0.5, 0.5, 0.15, -0.5, -0.5, 0.15, 0.5, -0.5, 0.15, -0.5, 0.5, 0.15, -0.5, -0.5, -0.15, 0.5, 0.5, -0.15, 0.5, -0.5, -0.15, -0.5, 0.5, -0.15, 0.5, 0.5, -0.15, -0.5, -0.5, -0.15, -0.5 )
 
-[sub_resource type="CubeMesh" id=10]
-size = Vector3( 1, 0.3, 1 )
-
-[sub_resource type="SpatialMaterial" id=11]
+[sub_resource type="SpatialMaterial" id=15]
 albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="CubeMesh" id=10]
+material = SubResource( 15 )
+size = Vector3( 1, 0.3, 1 )
 
 [sub_resource type="ConcavePolygonShape" id=12]
 data = PoolVector3Array( -0.5, 0.15, 0.5, 0.5, 0.15, 0.5, -0.5, -0.15, 0.5, 0.5, 0.15, 0.5, 0.5, -0.15, 0.5, -0.5, -0.15, 0.5, 0.5, 0.15, -0.5, -0.5, 0.15, -0.5, 0.5, -0.15, -0.5, -0.5, 0.15, -0.5, -0.5, -0.15, -0.5, 0.5, -0.15, -0.5, 0.5, 0.15, 0.5, 0.5, 0.15, -0.5, 0.5, -0.15, 0.5, 0.5, 0.15, -0.5, 0.5, -0.15, -0.5, 0.5, -0.15, 0.5, -0.5, 0.15, -0.5, -0.5, 0.15, 0.5, -0.5, -0.15, -0.5, -0.5, 0.15, 0.5, -0.5, -0.15, 0.5, -0.5, -0.15, -0.5, 0.5, 0.15, 0.5, -0.5, 0.15, 0.5, 0.5, 0.15, -0.5, -0.5, 0.15, 0.5, -0.5, 0.15, -0.5, 0.5, 0.15, -0.5, -0.5, -0.15, 0.5, 0.5, -0.15, 0.5, -0.5, -0.15, -0.5, 0.5, -0.15, 0.5, 0.5, -0.15, -0.5, -0.5, -0.15, -0.5 )
 
 [node name="Navigation" type="Spatial"]
 
-[node name="walkable" type="MeshInstance" parent="."]
+[node name="GridMap" type="GridMap" parent="."]
+data = {
+"cells": PoolIntArray(  )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="walkable" type="MeshInstance" parent="GridMap"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25819, 0, 0 )
 mesh = SubResource( 1 )
-material/0 = SubResource( 2 )
-
-[node name="StaticBody" type="StaticBody" parent="walkable"]
-
-[node name="CollisionShape" type="CollisionShape" parent="walkable/StaticBody"]
-shape = SubResource( 3 )
-
-[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="walkable"]
-navmesh = SubResource( 4 )
-
-[node name="non_walkable" type="MeshInstance" parent="."]
-mesh = SubResource( 5 )
+skeleton = NodePath("")
 material/0 = null
 
-[node name="StaticBody" type="StaticBody" parent="non_walkable"]
+[node name="StaticBody" type="StaticBody" parent="GridMap/walkable"]
 
-[node name="CollisionShape" type="CollisionShape" parent="non_walkable/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="GridMap/walkable/StaticBody"]
+shape = SubResource( 3 )
+
+[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="GridMap/walkable"]
+navmesh = SubResource( 4 )
+
+[node name="non_walkable" type="MeshInstance" parent="GridMap"]
+mesh = SubResource( 5 )
+skeleton = NodePath("")
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="GridMap/non_walkable"]
+
+[node name="CollisionShape" type="CollisionShape" parent="GridMap/non_walkable/StaticBody"]
 shape = SubResource( 6 )
 
-[node name="start_block" type="MeshInstance" parent="."]
+[node name="start_block" type="MeshInstance" parent="GridMap"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.22674, 0, 1.10809 )
 mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+skeleton = NodePath("")
+material/0 = null
 
-[node name="StaticBody" type="StaticBody" parent="start_block"]
+[node name="StaticBody" type="StaticBody" parent="GridMap/start_block"]
 
-[node name="CollisionShape" type="CollisionShape" parent="start_block/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="GridMap/start_block/StaticBody"]
 shape = SubResource( 9 )
 
-[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="start_block"]
+[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="GridMap/start_block"]
 
-[node name="end_block" type="MeshInstance" parent="."]
+[node name="end_block" type="MeshInstance" parent="GridMap"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0192903, 0, 1.10315 )
 mesh = SubResource( 10 )
-material/0 = SubResource( 11 )
+skeleton = NodePath("")
+material/0 = null
 
-[node name="StaticBody" type="StaticBody" parent="end_block"]
+[node name="StaticBody" type="StaticBody" parent="GridMap/end_block"]
 
-[node name="CollisionShape" type="CollisionShape" parent="end_block/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="GridMap/end_block/StaticBody"]
 shape = SubResource( 12 )
 
-[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="end_block"]
+[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="GridMap/end_block"]
