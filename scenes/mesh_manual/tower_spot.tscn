@@ -13,7 +13,7 @@ mesh = SubResource( 1 )
 skeleton = NodePath("")
 material/0 = null
 
-[node name="StaticBody" type="StaticBody" parent="tower_spot"]
+[node name="tower_spot_collider" type="StaticBody" parent="tower_spot"]
 
-[node name="CollisionShape" type="CollisionShape" parent="tower_spot/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="tower_spot/tower_spot_collider"]
 shape = SubResource( 2 )

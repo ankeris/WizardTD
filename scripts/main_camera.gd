@@ -1,6 +1,7 @@
 extends Camera
 
 const ray_length = 1000
+const tower_spot_collider_name = 'tower_spot_collider'
 onready var towers_path = $'../GridMap/Navigation/towers_path'
 
 func _ready():
@@ -14,7 +15,8 @@ func _input(event):
 	
 	# handle click
 	if event is InputEventMouseButton and event.pressed and event.button_index == 1:
-		print(event)
+		if (raycast_object.collider.name == tower_spot_collider_name):
+			print("tower_spot")
 
 # maybe submit a PR for this feature
 
