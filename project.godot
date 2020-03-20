@@ -24,6 +24,10 @@ config/name="WizardTD"
 run/main_scene="res://scenes/main.tscn"
 config/icon="res://icon.png"
 
+[global]
+
+snap=false
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
