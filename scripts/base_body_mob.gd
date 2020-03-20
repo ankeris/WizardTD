@@ -1,6 +1,5 @@
 extends Spatial
 # # # # # # #
-onready var kinematic_body = get_parent()
 
 # HP Health Points
 puppet var hp: int = 90
@@ -25,8 +24,9 @@ var direction: Vector3 = Vector3()
 var selected: bool = false
 
 # Other
-onready var navigation = $"../../GridMap/Navigation"
-onready var end_pos = $"../../GridMap/Navigation/end_pos"
+onready var navigation = $"../../manual_map/walk_path"
+onready var end_pos = $"../../manual_map/walk_path/navigation/end_block/end_pos"
+onready var kinematic_body = self
 
 # Path finding vars
 var path = []

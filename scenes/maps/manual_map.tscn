@@ -14,62 +14,62 @@ agent/radius = 0.35
 region/min_size = 0.0
 region/merge_size = 8.37
 
-[node name="Spatial" type="Spatial"]
+[node name="manual_map" type="Spatial"]
 
 [node name="walk_path" type="Navigation" parent="."]
 
-[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="walk_path"]
+[node name="navigation" type="NavigationMeshInstance" parent="walk_path"]
 navmesh = SubResource( 1 )
 
-[node name="walk_path" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5 )
 
-[node name="walk_path2" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path2" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.5 )
 
-[node name="walk_path3" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path3" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 0.5 )
 
-[node name="walk_path4" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path4" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -0.5 )
 
-[node name="walk_path5" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path5" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -1.5 )
 
-[node name="walk_path6" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path6" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, -1.5 )
 
-[node name="walk_path7" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path7" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, -1.5 )
 
-[node name="walk_path8" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path8" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, -0.5 )
 
-[node name="walk_path9" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path9" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 0.5 )
 
-[node name="walk_path10" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path10" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 1.5 )
 
-[node name="walk_path11" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path11" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 2.5 )
 
-[node name="walk_path12" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path12" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, 2.5 )
 
-[node name="walk_path13" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path13" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 2.5 )
 
-[node name="walk_path14" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path14" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 2.5 )
 
-[node name="walk_path15" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 1 )]
+[node name="walk_path15" parent="walk_path/navigation" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 2.5 )
 
-[node name="start_block" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 3 )]
+[node name="start_block" parent="walk_path/navigation" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5 )
 
-[node name="end_block" parent="walk_path/NavigationMeshInstance" instance=ExtResource( 4 )]
+[node name="end_block" parent="walk_path/navigation" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 2.5 )
 
 [node name="towers_path" type="Spatial" parent="walk_path"]
