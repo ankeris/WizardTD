@@ -16,3 +16,5 @@ script = ExtResource( 2 )
 [node name="manual_map" parent="." instance=ExtResource( 1 )]
 
 [node name="mobs" type="Spatial" parent="."]
+
+[node name="towers" type="Spatial" parent="."]

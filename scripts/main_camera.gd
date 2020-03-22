@@ -14,7 +14,7 @@ func _input(event):
 	var space_state = get_world().direct_space_state
 	var raycast_object = space_state.intersect_ray(from, to, [])
 	
-	# handle click
+	# On click, select the TOWER NODE and put a flag on it
 	if event is InputEventMouseButton and event.pressed and event.button_index == 1 and raycast_object:
 		var target_collider = raycast_object.collider
 		if (target_collider.name == tower_spot_collider_name):
@@ -27,5 +27,9 @@ func _input(event):
 			previously_selected_tower_path_flag = tower_spot_flag;
 			
 
+
+func select_tower_node():
+	pass
+	
 # maybe submit a PR for this feature
 
