@@ -9,8 +9,8 @@ script = ExtResource( 3 )
 
 [node name="Timer" type="Timer" parent="."]
 
-[node name="Camera" type="Camera" parent="."]
-transform = Transform( 0.888161, -0.447834, 0.103029, 0, 0.224203, 0.974542, -0.459533, -0.86555, 0.199128, 2.52659, 7.05031, 2.43992 )
+[node name="Camera-Player" type="Camera" parent="."]
+transform = Transform( 0.888161, -0.447834, 0.103029, 0, 0.224203, 0.974542, -0.459533, -0.86555, 0.199128, 3.47715, 7.05031, 2.13254 )
 script = ExtResource( 2 )
 
 [node name="manual_map" parent="." instance=ExtResource( 1 )]
